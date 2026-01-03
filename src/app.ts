@@ -15,5 +15,7 @@ app.use("/api/v1/invoices", invoiceRoutes);
 app.use("/api/v1", authRoutes);
 app.use("/api/v1/analytics", analyticsRoutes);
 
+app.use(errorHandler); // ✅ last
+
 
 export default app;
